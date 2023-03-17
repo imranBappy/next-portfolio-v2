@@ -25,7 +25,9 @@ const Navbar = () => {
             style={{ backgroundColor: shadow ? 'rgb(236 240 243 / 82%)' : 'transparent' }}
         >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-                <Image src='/../public/assets/navLogo.png' alt='Imran' width='250' height='80' />
+                <Link href={'/'}>
+                    <Image src='/../public/assets/navLogo.png' alt='Imran' width='250' height='80' />
+                </Link>
                 <div>
                     <ul className='hidden md:flex'>
                         <li className='ml-10 text-sm uppercase haver:border-b' >

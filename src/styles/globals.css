@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  --scroll-behavior: smooth !important;
-  scroll-behavior: smooth !important;
-}
 @layer base {
+  html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+  }
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
   }
@@ -28,6 +28,13 @@ html {
     @apply cursor-pointer;
   }
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl bg-gradient-to-r from-primary to-[#709dff] text-white;
+    @apply shadow-lg shadow-gray-400 hover:shadow-primary ring-2 ring-primary font-semibold rounded hover:bg-gradient-to-r from-primary to-[#709dff] hover:text-white;
   }
 }
+
+@layer components {
+  .icon_link {
+    @apply text-xl rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300;
+  }
+}
+
