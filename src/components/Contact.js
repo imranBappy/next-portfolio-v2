@@ -121,7 +121,7 @@ const Contact = () => {
                                         required
                                     ></textarea>
                                 </div>
-                                <button className='w-full p-4 hover:text-gray-100 text-primary mt-4'>
+                                <button className='w-full uppercase font-semibold p-4 hover:text-gray-100 text-primary mt-4'>
                                     Send Message
                                 </button>
                             </form>

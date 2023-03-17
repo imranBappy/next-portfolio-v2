@@ -12,7 +12,7 @@ import Mongo from '../../public/assets/tech/Mongo.svg';
 const ProjectItem = ({ img, name, tech, overview, live, repo }) => {
     return (
         <div>
-            <div className='relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
+            <div className='relative flex items-center justify-center md:h-auto min-h-[380px]  w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
                 <Image className='rounded-xl group-hover:opacity-10 min-h-[350px]' src={img} alt='/' />
                 <div className='hidden group-hover:block p-6 absolute h-full top-[50%] w-full   left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                     <div className='flex flex-col justify-between'>
@@ -43,11 +43,11 @@ const ProjectItem = ({ img, name, tech, overview, live, repo }) => {
                             }
                         </div>
 
-                        <div className='flex justify-between gap-3 mt-2'>
-                            <a href={live} className='text-center py-2 w-full rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
+                        <div className='flex justify-between gap-3 mt-2 flex-wrap'>
+                            <a href={live} className='text-center py-2 w-[48%] rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
                                 Live
                             </a>
-                            <a href={repo} className='text-center py-2 w-full rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
+                            <a href={repo} className='text-center py-2 w-[48%] rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
                                 Repo
                             </a>
                         </div>

@@ -36,12 +36,10 @@ const Projects = () => {
                     {
                         myProjects.map((project, key) => <ProjectItem key={key} {...project} />)
                     }
-
-
                 </div>
                 <div className='flex items-center justify-center mt-7'>
                     <a href="https://github.com/imranBappy?tab=repositories">
-                        <button className='p-4 w-[200px] hover:text-gray-100 text-primary mt-4'>
+                        <button className='px-4 py-3 w-[200px] uppercase text-md font-semibold hover:text-gray-100 text-primary mt-4'>
                             See More
                         </button>
                     </a>

@@ -43,7 +43,7 @@ const Main = () => {
                 </div>
                 <div className='mt-5'>
                     <a href="https://drive.google.com/file/d/1Hh83c26OkKC28RlYetYWjvDGr8wwXHQ8/view">
-                        <button className='px-5 py-2 text-primary'>
+                        <button className='px-5 py-2 text-primary font-bold uppercase'>
                             Resume
                         </button>
                     </a>
