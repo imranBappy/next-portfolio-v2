@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FaFacebook, FaGithub, FaLinkedin } from 'react-icons/fa';
+import logo from '../../public/assets/navLogo.png';
 import { SiLeetcode } from 'react-icons/si';
 const Navbar = () => {
     const [shadow, setShadow] = useState(false);
@@ -26,7 +27,7 @@ const Navbar = () => {
         >
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
                 <Link href={'/'}>
-                    <Image src='/../public/assets/navLogo.png' alt='Imran' width='250' height='80' />
+                    <Image src={logo} alt='Imran' width='250' height='80' />
                 </Link>
                 <div>
                     <ul className='hidden md:flex'>

@@ -1,55 +1,68 @@
 import Image from 'next/image';
 import React from 'react';
 import SkillItem from './SkillItem';
+import htmlIcon from '../../public/assets/skills/html.png';
+import cssIcon from '../../public/assets/skills/css.png';
+
+import javascriptIcon from '../../public/assets/skills/javascript.png';
+import pythonIcon from '../../public/assets/skills/python.png';
+import reactIcon from '../../public/assets/skills/react.png';
+import reduxIcon from '../../public/assets/skills/redux.png';
+import tailwindIcon from '../../public/assets/skills/tailwind.png';
+import nextjsIcon from '../../public/assets/skills/nextjs.png';
+import nodeIcon from '../../public/assets/skills/node.png';
+import mongoIcon from '../../public/assets/skills/mongo.png';
+import githubIcon from '../../public/assets/skills/github1.png';
+import firebaseIcon from '../../public/assets/skills/firebase.png';
 
 const mySkills = [
     {
         title: 'HTML',
-        src: '/../public/assets/skills/html.png'
+        src: htmlIcon
     }
     , {
         title: 'CSS',
-        src: '/../public/assets/skills/css.png'
+        src: cssIcon
     },
     {
         title: 'JAVASCRIPT',
-        src: '/../public/assets/skills/javascript.png'
+        src: javascriptIcon
     },
     {
         title: 'PYTHON',
-        src: '/../public/assets/skills/python.png'
+        src: pythonIcon
     },
     {
         title: 'TAILWIND',
-        src: '/../public/assets/skills/react.png'
+        src: reactIcon
     },
     {
         title: 'REDUX',
-        src: '/../public/assets/skills/redux.png'
+        src: reduxIcon
     },
     {
         title: 'TAILWIND',
-        src: '/../public/assets/skills/tailwind.png'
+        src: tailwindIcon
     },
     {
         title: 'NEXT JS',
-        src: '/../public/assets/skills/nextjs.png'
+        src: nextjsIcon
     },
     {
         title: 'NODE JS',
-        src: '/../public/assets/skills/node.png'
+        src: nodeIcon
     },
     {
         title: 'MONGODB',
-        src: '/../public/assets/skills/mongo.png'
+        src: mongoIcon
     },
     {
         title: 'GITHUB',
-        src: '/../public/assets/skills/github1.png'
+        src: githubIcon
     },
     {
         title: 'FIREBASE',
-        src: '/../public/assets/skills/firebase.png'
+        src: firebaseIcon
     }
 ]
 const Skills = () => {
