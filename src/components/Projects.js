@@ -1,7 +1,8 @@
 import React from 'react';
-import property from '../../public/assets/projects/property.jpg';
 import returnZeroFont from '../../public/assets/projects/return-zero-font.png';
 import retrunZeroDashboard from '../../public/assets/projects/return-zero-dashboard.png';
+import flightBooking from '../../public/assets/projects/flight-booking.png';
+
 
 
 
@@ -23,6 +24,14 @@ const myProjects = [
         live: 'https://return-zero.netlify.app/',
         repo: 'https://github.com/imranBappy/ERP',
         img: retrunZeroDashboard
+    },
+    {
+        name: 'Flight Booking App',
+        overview: "An light Booking App. User can book a flight ticket and see the ticket details",
+        tech: ['js', 'react', 'redux'],
+        live: 'https://roaring-daffodil-65ea24.netlify.app/',
+        repo: 'https://github.com/imranBappy/flight-book',
+        img: flightBooking
     }
 ];
 

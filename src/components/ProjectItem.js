@@ -5,6 +5,7 @@ import Express from '../../public/assets/tech/Express.svg';
 import NodeJs from '../../public/assets/tech/Node.svg';
 import ReactJs from '../../public/assets/tech/React.svg';
 import Mongo from '../../public/assets/tech/Mongo.svg';
+import Redux from '../../public/assets/tech/Redux.svg';
 
 
 
@@ -18,40 +19,41 @@ const ProjectItem = ({ img, name, tech, overview, live, repo }) => {
                     <div className='flex flex-col justify-between'>
                         <h3 className='text-2xl text-white tracking-wider '>{name}</h3>
                         <p className=' pt-3 text-gray-200 underline'>Overview</p>
-                        <p className='pt-1 text-white text-justify'>
-                            {overview}
-                        </p>
-                        <div className='flex gap-1 my-5 flex-wrap'>
-                            {
-                                tech.map((item, index) => {
-                                    switch (item) {
-                                        case 'js':
-                                            return <Image src={Js} height={28} width={100} alt='JS' />
-                                        case 'react':
-                                            return <Image src={ReactJs} height={28} width={100} alt='React' />
-                                        case 'node':
-                                            return <Image src={NodeJs} height={28} width={100} alt='NodeJs' />
-                                        case 'express':
-                                            return <Image src={Express} height={28} width={100} alt='Express' />
-                                        case 'mongo':
-                                            return <Image src={Mongo} height={28} width={100} alt='Mongo' />
-                                        default:
-                                            break;
-                                    }
-
-                                })
-                            }
+                        <div className='flex flex-col justify-between h-[260px]'>
+                            <p className='pt-1 text-white text-justify'>
+                                {overview}
+                            </p>
+                            <div className='flex gap-1 my-5 flex-wrap'>
+                                {
+                                    tech.map((item, index) => {
+                                        switch (item) {
+                                            case 'js':
+                                                return <Image key={index} src={Js} height={28} width={100} alt='JS' />
+                                            case 'react':
+                                                return <Image key={index} src={ReactJs} height={28} width={100} alt='React' />
+                                            case 'node':
+                                                return <Image key={index} src={NodeJs} height={28} width={100} alt='NodeJs' />
+                                            case 'express':
+                                                return <Image key={index} src={Express} height={28} width={100} alt='Express' />
+                                            case 'mongo':
+                                                return <Image key={index} src={Mongo} height={28} width={100} alt='Mongo' />
+                                            case 'redux':
+                                                return <Image key={index} src={Redux} height={28} width={100} alt='Redux' />
+                                            default:
+                                                break;
+                                        }
+                                    })
+                                }
+                            </div>
+                            <div className='flex justify-between gap-3 mt-2 flex-wrap'>
+                                <a href={live} className='text-center py-2 w-[48%] rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
+                                    Live
+                                </a>
+                                <a href={repo} className='text-center py-2 w-[48%] rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
+                                    Repo
+                                </a>
+                            </div>
                         </div>
-
-                        <div className='flex justify-between gap-3 mt-2 flex-wrap'>
-                            <a href={live} className='text-center py-2 w-[48%] rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
-                                Live
-                            </a>
-                            <a href={repo} className='text-center py-2 w-[48%] rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
-                                Repo
-                            </a>
-                        </div>
-
                     </div>
                 </div>
             </div>
