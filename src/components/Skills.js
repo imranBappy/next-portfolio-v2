@@ -5,13 +5,22 @@ import htmlIcon from '../../public/assets/skills/html.png';
 import cssIcon from '../../public/assets/skills/css.png';
 
 import javascriptIcon from '../../public/assets/skills/javascript.png';
+import typescriptIcon from '../../public/assets/skills/typescrip.png';
 import pythonIcon from '../../public/assets/skills/python.png';
+
+import tailwindIcon from '../../public/assets/skills/tailwind.png'
 import reactIcon from '../../public/assets/skills/react.png';
 import reduxIcon from '../../public/assets/skills/redux.png';
-import tailwindIcon from '../../public/assets/skills/tailwind.png';
-import nextjsIcon from '../../public/assets/skills/nextjs.png';
+
 import nodeIcon from '../../public/assets/skills/node.png';
+import expressIcon from '../../public/assets/skills/expressjs.png';
+import graphQLIcon from '../../public/assets/skills/graphql.png';
+import nextjsIcon from '../../public/assets/skills/nextjs.png';
+
 import mongoIcon from '../../public/assets/skills/mongo.png';
+import mySQLIcon from '../../public/assets/skills/mySQL.png';
+
+
 import githubIcon from '../../public/assets/skills/github1.png';
 import firebaseIcon from '../../public/assets/skills/firebase.png';
 
@@ -29,11 +38,19 @@ const mySkills = [
         src: javascriptIcon
     },
     {
+        title: 'TYPESCRIPT',
+        src: typescriptIcon
+    },
+    {
         title: 'PYTHON',
         src: pythonIcon
     },
     {
         title: 'TAILWIND',
+        src: tailwindIcon
+    },
+    {
+        title: 'REACT',
         src: reactIcon
     },
     {
@@ -41,20 +58,28 @@ const mySkills = [
         src: reduxIcon
     },
     {
-        title: 'TAILWIND',
-        src: tailwindIcon
+        title: 'NODE JS',
+        src: nodeIcon
+    },
+    {
+        title: 'EXPRESS JS',
+        src: expressIcon
+    },
+    {
+        title: 'GRAPHQL',
+        src: graphQLIcon
     },
     {
         title: 'NEXT JS',
         src: nextjsIcon
     },
     {
-        title: 'NODE JS',
-        src: nodeIcon
-    },
-    {
         title: 'MONGODB',
         src: mongoIcon
+    },
+    {
+        title: 'MYSQL',
+        src: mySQLIcon
     },
     {
         title: 'GITHUB',
