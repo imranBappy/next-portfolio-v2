@@ -6,6 +6,7 @@ import NodeJs from '../../public/assets/tech/Node.svg';
 import ReactJs from '../../public/assets/tech/React.svg';
 import Mongo from '../../public/assets/tech/Mongo.svg';
 import Redux from '../../public/assets/tech/Redux.svg';
+import ProjectBtn from './ProjectBtn';
 
 
 
@@ -23,35 +24,39 @@ const ProjectItem = ({ img, name, tech, overview, live, repo }) => {
                             <p className='pt-1 text-white text-justify'>
                                 {overview}
                             </p>
-                            <div className='flex gap-1 my-5 flex-wrap'>
-                                {
-                                    tech.map((item, index) => {
-                                        switch (item) {
-                                            case 'js':
-                                                return <Image key={index} src={Js} height={28} width={100} alt='JS' />
-                                            case 'react':
-                                                return <Image key={index} src={ReactJs} height={28} width={100} alt='React' />
-                                            case 'node':
-                                                return <Image key={index} src={NodeJs} height={28} width={100} alt='NodeJs' />
-                                            case 'express':
-                                                return <Image key={index} src={Express} height={28} width={100} alt='Express' />
-                                            case 'mongo':
-                                                return <Image key={index} src={Mongo} height={28} width={100} alt='Mongo' />
-                                            case 'redux':
-                                                return <Image key={index} src={Redux} height={28} width={100} alt='Redux' />
-                                            default:
-                                                break;
-                                        }
-                                    })
-                                }
+                            <div >
+                                <p className='py-3 text-gray-200 underline'>Used Technology</p>
+                                <div className='flex gap-1 flex-wrap'>
+                                    {
+                                        tech.map((item, index) => {
+                                            switch (item) {
+                                                case 'js':
+                                                    return <Image key={index} src={Js} height={28} width={100} alt='JS' />
+                                                case 'react':
+                                                    return <Image key={index} src={ReactJs} height={28} width={100} alt='React' />
+                                                case 'node':
+                                                    return <Image key={index} src={NodeJs} height={28} width={100} alt='NodeJs' />
+                                                case 'express':
+                                                    return <Image key={index} src={Express} height={28} width={100} alt='Express' />
+                                                case 'mongo':
+                                                    return <Image key={index} src={Mongo} height={28} width={100} alt='Mongo' />
+                                                case 'redux':
+                                                    return <Image key={index} src={Redux} height={28} width={100} alt='Redux' />
+                                                default:
+                                                    break;
+                                            }
+                                        })
+                                    }
+                                </div>
+
                             </div>
                             <div className='flex justify-between gap-3 mt-2 flex-wrap'>
-                                <a href={live} className='text-center py-2 w-[48%] rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
-                                    Live
-                                </a>
-                                <a href={repo} className='text-center py-2 w-[48%] rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
-                                    Repo
-                                </a>
+                                {
+                                    live && <ProjectBtn href={live} level={'Live'} />
+                                }
+                                {
+                                    repo && <ProjectBtn href={repo} level={'Repo'} />
+                                }
                             </div>
                         </div>
                     </div>
