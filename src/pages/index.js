@@ -5,8 +5,11 @@ import About from '@/components/About'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
+import myProjects from '@/data/projects'
 
 export default function Home() {
+
+  let projects = myProjects.slice(0, 4)
   return (
     <div>
       <Head>
@@ -21,7 +24,7 @@ export default function Home() {
       <Main />
       <About />
       <Skills />
-      <Projects />
+      <Projects projects={projects} />
       <Contact />
     </div>
   )

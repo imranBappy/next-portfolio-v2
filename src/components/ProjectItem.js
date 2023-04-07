@@ -1,11 +1,16 @@
 import Image from 'next/image';
 import React from 'react';
+import html from '../../public/assets/tech/html.svg';
+import css from '../../public/assets/tech/css.svg';
 import Js from '../../public/assets/tech/Js.svg';
 import Express from '../../public/assets/tech/Express.svg';
 import NodeJs from '../../public/assets/tech/Node.svg';
 import ReactJs from '../../public/assets/tech/React.svg';
 import Mongo from '../../public/assets/tech/Mongo.svg';
 import Redux from '../../public/assets/tech/Redux.svg';
+import ts from '../../public/assets/tech/ts.svg';
+import next from '../../public/assets/tech/next.svg';
+
 import ProjectBtn from './ProjectBtn';
 
 
@@ -30,8 +35,16 @@ const ProjectItem = ({ img, name, tech, overview, live, repo }) => {
                                     {
                                         tech.map((item, index) => {
                                             switch (item) {
+                                                case 'html':
+                                                    return <Image key={index} src={html} height={28} width={100} alt='JS' />
+                                                case 'css':
+                                                    return <Image key={index} src={css} height={28} width={100} alt='JS' />
                                                 case 'js':
                                                     return <Image key={index} src={Js} height={28} width={100} alt='JS' />
+                                                case 'ts':
+                                                    return <Image key={index} src={ts} height={28} width={100} alt='TS' />
+                                                case 'next':
+                                                    return <Image key={index} src={next} height={28} width={100} alt='Next Js' />
                                                 case 'react':
                                                     return <Image key={index} src={ReactJs} height={28} width={100} alt='React' />
                                                 case 'node':
