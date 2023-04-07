@@ -10,6 +10,8 @@ import Mongo from '../../public/assets/tech/Mongo.svg';
 import Redux from '../../public/assets/tech/Redux.svg';
 import ts from '../../public/assets/tech/ts.svg';
 import next from '../../public/assets/tech/next.svg';
+import firebase from '../../public/assets/tech/firebase.svg';
+
 
 import ProjectBtn from './ProjectBtn';
 
@@ -55,6 +57,8 @@ const ProjectItem = ({ img, name, tech, overview, live, repo }) => {
                                                     return <Image key={index} src={Mongo} height={28} width={100} alt='Mongo' />
                                                 case 'redux':
                                                     return <Image key={index} src={Redux} height={28} width={100} alt='Redux' />
+                                                case 'firebase':
+                                                    return <Image key={index} src={firebase} height={28} width={100} alt='Redux' />
                                                 default:
                                                     break;
                                             }
