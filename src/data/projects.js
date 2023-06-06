@@ -55,8 +55,8 @@ const myProjects = [
         name: 'E-Commerce Dashbard ',
         overview: "An e-commerce dashbard . admin can all status in his bussness and admin can filter",
         tech: ['html', 'css', 'js', 'react', 'redux'],
-        live: 'https://awesome-euler-8eab2c.netlify.app/',
-        repo: 'https://github.com/imranBappy/students_job_client.git',
+        live: 'https://tubular-eclair-5ddd76.netlify.app/',
+        repo: 'https://github.com/imranBappy/shopify-dashboard.git',
         img: eCommerceDashboard
     },
     {
