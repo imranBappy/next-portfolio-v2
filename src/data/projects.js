@@ -15,8 +15,7 @@ import todoMern from '../../public/assets/projects/todo-mern.png';
 import todoNext from '../../public/assets/projects/todo-next.png';
 import portfolio from '../../public/assets/projects/portfolio.png';
 import clock from '../../public/assets/projects/clock.png';
-
-
+import eCommerceDashboard from '../../public/assets/projects/e-commerce-dashboard.png';
 
 
 
@@ -52,7 +51,16 @@ const myProjects = [
         img: returnZeroFont
     },
     {
-        id: 4,
+        id: 6,
+        name: 'E-Commerce Dashbard ',
+        overview: "An e-commerce dashbard . admin can all status in his bussness and admin can filter",
+        tech: ['html', 'css', 'js', 'react', 'redux'],
+        live: 'https://awesome-euler-8eab2c.netlify.app/',
+        repo: 'https://github.com/imranBappy/students_job_client.git',
+        img: eCommerceDashboard
+    },
+    {
+        id: 42,
         name: 'University Dashboard - ( MERN )',
         overview: "An Education Institu Management System (EIMS) is a comprehensive software solution that is designed to streamline and automate the day-to-day operations of educational institutions.",
         tech: ['js', 'react', 'node', 'express', 'mongo'],
@@ -70,7 +78,7 @@ const myProjects = [
         img: todoMern
     },
     {
-        id: 6,
+        id: 7,
         name: 'Student Job - ( Server Less ) ',
         overview: "An only earnign site. User can subsrib package and earn money by watching ad video",
         tech: ['html', 'css', 'js', 'react', 'firebase'],
@@ -79,7 +87,7 @@ const myProjects = [
         img: studentEarn
     },
     {
-        id: 7,
+        id: 8,
         name: 'Learn with Imran - ( Server Less - Application ) ',
         overview: "An online learning system. Student can create account and quiz test",
         tech: ['html', 'css', 'js', 'react', 'firebase'],
@@ -88,7 +96,7 @@ const myProjects = [
         img: quiz
     },
     {
-        id: 8,
+        id: 9,
         name: 'Online Blood Bank - ( Server Less - Application ) ',
         overview: "An online blood bank. User can create account and login search doner",
         tech: ['html', 'css', 'js', 'react', 'firebase'],
@@ -97,7 +105,7 @@ const myProjects = [
         img: bloodBank
     },
     {
-        id: 9,
+        id: 99,
         name: 'Videos Gallery - ( Fontend ) ',
         overview: "An light Booking App. User can book a flight ticket and see the ticket details",
         tech: ['js', 'react', 'redux'],
