@@ -28,7 +28,7 @@ const myProjects = [
         name: 'Advance Blog Application - ( MERN )',
         overview: "An Blog Application. User can create a new blog, edit and delete. Reader can comment. Admin can all post edit and delete",
         tech: ['js', 'ts', 'next', 'redux', 'node', 'exress', 'mongo'],
-        // live: 'https://roaring-daffodil-65ea24.netlify.app/',
+        live: 'https://advanced-blog.netlify.app',
         repo: 'https://github.com/imranBappy/advanced-blog-application.git',
         img: blog
     },
